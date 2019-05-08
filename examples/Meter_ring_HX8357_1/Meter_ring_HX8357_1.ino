@@ -159,7 +159,7 @@ int ringMeter(int value, int vmin, int vmax, int x, int y, int r, char *units, b
   // Uncomment next line to set the text colour to the last segment value!
   tft.setTextColor(colour, HX8357_BLACK);
   tft.setTextDatum(MC_DATUM);
-  // Print value, if the meter is large then use big font 8, othewise use 4
+  // Print value, if the meter is large then use big font 8, otherwise use 4
   if (r > 84) {
     tft.setTextPadding(55*3); // Allow for 3 digits each 55 pixels wide
     tft.drawString(buf, x, y, 8); // Value in middle
@@ -170,7 +170,7 @@ int ringMeter(int value, int vmin, int vmax, int x, int y, int r, char *units, b
   }
   tft.setTextSize(1);
   tft.setTextPadding(0);
-  // Print units, if the meter is large then use big font 4, othewise use 2
+  // Print units, if the meter is large then use big font 4, otherwise use 2
   tft.setTextColor(HX8357_WHITE, HX8357_BLACK);
   if (r > 84) tft.drawString(units, x, y + 60, 4); // Units display
   else tft.drawString(units, x, y + 15, 2); // Units display

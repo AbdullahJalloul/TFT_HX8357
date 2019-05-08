@@ -74,7 +74,7 @@ void drawBMP(char *filename, int x, int y, boolean flip) {
   if ((x >= tft.width()) || (y >= tft.height())) return;
   File     bmpFile;
   int16_t  bmpWidth, bmpHeight;   // Image W+H in pixels
-  //uint8_t  bmpDepth;            // Bit depth (must be 24) but we dont use this
+  //uint8_t  bmpDepth;            // Bit depth (must be 24) but we don't use this
   uint32_t bmpImageoffset;        // Start address of image data in file
   uint32_t rowSize;               // Not always = bmpWidth; may have padding
   uint8_t  sdbuffer[3 * BUFF_SIZE];    // SD read pixel buffer (8 bits each R+G+B per pixel)

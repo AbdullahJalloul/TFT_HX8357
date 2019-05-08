@@ -81,7 +81,7 @@ void loop() {
   tft.setTextColor(TFT_YELLOW, TFT_BLACK);
   tft.setCursor(xpos, ypos);    // Set cursor near top left corner of screen
 
-  tft.setFreeFont(GLCD);     // Select the orginal small GLCD font by using NULL or GLCD
+  tft.setFreeFont(GLCD);     // Select the original small GLCD font by using NULL or GLCD
   tft.println();             // Move cursor down a line
   tft.print("Original GLCD font");    // Print the font name onto the TFT screen
   tft.println();

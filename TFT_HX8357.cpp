@@ -1,5 +1,5 @@
 /***************************************************
-  Arduino TFT graphics library targetted at the Mega
+  Arduino TFT graphics library targeted at the Mega
   board when used with one of these two display shields
   from Banggood China:
   
@@ -22,7 +22,7 @@
   at the end of this file.
 
   This is a standalone library that contains the
-  hardware driver, the graphics funtions and the
+  hardware driver, the graphics functions and the
   proportional fonts.
 
   This library also contains a set of fonts for fast
@@ -1008,7 +1008,7 @@ int16_t TFT_HX8357::textWidth(char *string, int font)
     while (*string)
     {
       uniCode = *(string++);
-      str_width += pgm_read_byte( widthtable + uniCode); // Normally we need to subract 32 from uniCode
+      str_width += pgm_read_byte( widthtable + uniCode); // Normally we need to subtract 32 from uniCode
     }
   }
 
@@ -1454,7 +1454,7 @@ void TFT_HX8357::pushColor(uint16_t color, uint16_t len)
 
 /***************************************************************************************
 ** Function name:           pushColors
-** Description:             push an aray of pixels for BMP image drawing
+** Description:             push an array of pixels for BMP image drawing
 ***************************************************************************************/
 // Sends an array of 16-bit color values to the TFT; used
 // externally by BMP examples.  Assumes that setWindow() has
@@ -1475,7 +1475,7 @@ void TFT_HX8357::pushColors(uint16_t *data, uint8_t len)
 
 /***************************************************************************************
 ** Function name:           pushColors
-** Description:             push an aray of pixels for 16 bit raw image drawing
+** Description:             push an array of pixels for 16 bit raw image drawing
 ***************************************************************************************/
 // Assumes that setWindow() has previously been called
 

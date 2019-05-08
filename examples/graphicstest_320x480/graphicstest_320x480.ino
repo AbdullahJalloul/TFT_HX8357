@@ -9,7 +9,7 @@
    display. Bear this in mind when making performance
    comparisons.
 
-   Make sure all the required font is loaded by editting the
+   Make sure all the required font is loaded by editing the
    User_Setup.h file in the TFT_HX8357 library folder.
 
    Original header is at the end of the sketch, some text in it is

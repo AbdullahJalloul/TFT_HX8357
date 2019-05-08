@@ -69,7 +69,7 @@ double ox = -999, oy = -999; // Force them to be off screen
   function to draw a cartesian coordinate system and plot whatever data you want
   just pass x and y and the graph will be drawn
 
-  huge arguement list
+  huge argument list
   &d name of your display object
   x = x data point
   y = y datapont
