@@ -239,7 +239,7 @@ void ProcessLine(struct Line2d *ret, struct Line3d vec)
     ret->p1.x = rx2;
     ret->p1.y = ry2;
   }
-  // The ifs here are checks for out of bounds. needs a bit more code here to "safe" lines that will be way out of whack, so they dont get drawn and cause screen garbage.
+  // The ifs here are checks for out of bounds. needs a bit more code here to "safe" lines that will be way out of whack, so they don't get drawn and cause screen garbage.
 
 }
 

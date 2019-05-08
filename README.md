@@ -10,7 +10,7 @@ The library is designed to be slim and fast. Typically a clear screen for a 320 
 
 The library is based on the Adafruit GFX library and the aim is to retain compatibility. Significant additions have been made to the library to boost the speed for the Mega processor and to add new features. The new graphics functions include different size proportional fonts and formatting features. There are a significant number of example sketches to demonstrate the different features.
 
-Configuration of the library font selections and other features is made by editting the User_Setup.h file in the library folder.  Fonts and features can easily be disabled by commenting out lines.
+Configuration of the library font selections and other features is made by editing the User_Setup.h file in the library folder.  Fonts and features can easily be disabled by commenting out lines.
 
 The 3.2" HX8357B display I use can be found here:
 

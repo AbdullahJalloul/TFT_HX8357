@@ -49,7 +49,7 @@
 
 // ##################################################################################
 //
-// Define the character to be used to detemine the text bounding box for datum changes
+// Define the character to be used to determine the text bounding box for datum changes
 //
 // ##################################################################################
 
@@ -65,7 +65,7 @@
 
 // Run faster by stopping most screen boundary limit checks
 // Comment out the following #define to stop boundary checking and clipping
-// for fillRectangle()and fastH/V lines. This speeds up other funtions such as text
+// for fillRectangle()and fastH/V lines. This speeds up other functions such as text
 // rendering where size>1. Sketch then must not draw graphics/text outside screen
 // boundary. Code saving for no bounds check (i.e. commented out) is small.
 
@@ -73,7 +73,7 @@
 
 
 // Render fonts slightly faster, only enable if you DO NOT use setTextSize(n)
-// with values of 'n' greater than 1, when enabled the code that alows the
+// with values of 'n' greater than 1, when enabled the code that allows the
 // text size to be multiplied is not included.
 
 //#define FIXED_SIZE 

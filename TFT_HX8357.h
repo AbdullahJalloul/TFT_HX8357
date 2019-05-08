@@ -1,5 +1,5 @@
 /***************************************************
-  Arduino TFT graphics library targetted at the
+  Arduino TFT graphics library targeted at the
   Mega board, HX8357B/C and ILI9481 display drivers.
 
   This library has been derived from the Adafruit_GFX
@@ -192,7 +192,7 @@ swap(T& a, T& b) { T t = a; a = b; b = t; }
 #define HX8357B_SETPANELRELATED  0xE9
 
 
-// This is a structure to conveniently hold infomation on the default fonts
+// This is a structure to conveniently hold information on the default fonts
 // Stores pointer to font character image address table, width table and height
 
 typedef struct {

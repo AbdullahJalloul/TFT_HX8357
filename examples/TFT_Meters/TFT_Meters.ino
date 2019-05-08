@@ -93,7 +93,7 @@ void analogMeter()
     // Long scale tick length
     int tl = 15;
 
-    // Coodinates of tick to draw
+    // Coordinates of tick to draw
     float sx = cos((i - 90) * 0.0174532925);
     float sy = sin((i - 90) * 0.0174532925);
     uint16_t x0 = sx * (100 + tl) + 120;
@@ -130,7 +130,7 @@ void analogMeter()
     // Short scale tick length
     if (i % 25 != 0) tl = 8;
 
-    // Recalculate coords incase tick lenght changed
+    // Recalculate coords in case tick length changed
     x0 = sx * (100 + tl) + 120;
     y0 = sy * (100 + tl) + 140;
     x1 = sx * 100 + 120;
@@ -193,7 +193,7 @@ void plotNeedle(int value, byte ms_delay)
     if (ms_delay == 0) old_analog = value; // Update immediately id delay is 0
 
     float sdeg = map(old_analog, -10, 110, -150, -30); // Map value to angle
-    // Calcualte tip of needle coords
+    // Calculate tip of needle coords
     float sx = cos(sdeg * 0.0174532925);
     float sy = sin(sdeg * 0.0174532925);
 
@@ -214,13 +214,13 @@ void plotNeedle(int value, byte ms_delay)
     osx = sx * 98 + 120;
     osy = sy * 98 + 140;
 
-    // Draw the needle in the new postion, magenta makes needle a bit bolder
+    // Draw the needle in the new position, magenta makes needle a bit bolder
     // draws 3 lines to thicken needle
     tft.drawLine(120 + 20 * ltx - 1, 140 - 20, osx - 1, osy, TFT_RED);
     tft.drawLine(120 + 20 * ltx, 140 - 20, osx, osy, TFT_MAGENTA);
     tft.drawLine(120 + 20 * ltx + 1, 140 - 20, osx + 1, osy, TFT_RED);
 
-    // Slow needle down slightly as it approaches new postion
+    // Slow needle down slightly as it approaches new position
     if (abs(old_analog - value) < 10) ms_delay += ms_delay / 5;
 
     // Wait before next update

@@ -1,7 +1,7 @@
 // Spiro
-// Rainbow patern generator
+// Rainbow pattern generator
 
-// Writen for a 320 x 240 screen hence does not fill screen
+// Written for a 320 x 240 screen hence does not fill screen
 
 // Updated by Bodmer
 

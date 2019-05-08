@@ -6,7 +6,7 @@
 
   This sketch uses font 4 only.
 
-  Make sure all the required fonts are loaded by editting the
+  Make sure all the required fonts are loaded by editing the
   User_Setup.h file in the TFT_HX8357 library folder.
 
   #########################################################################
